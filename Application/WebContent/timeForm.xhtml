@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head>
+        <title>Add New Record</title>
+        <link rel="stylesheet" type="text/css" href="stuff.css"></link>
+    </h:head>
+    <h:body>
+    	<h2>Add New Record</h2>
+    	<h:form>
+    	   <label>Employee ID:</label><h:inputText value="#{record.eid}"></h:inputText><br></br><br></br>
+    	   <label>Date (mm/dd/yyyy):</label><h:inputText value="#{record.date}"></h:inputText><br></br><br></br>
+    	   <label>Time In x:xx[pm/am]:</label><h:inputText value="#{record.timeIn}"></h:inputText><br></br><br></br>
+    	   <label>Time Out x:xx[pm/am]:</label><h:inputText value="#{record.timeOut}"></h:inputText><br></br><br></br>
+    	   <h:commandButton value="Add to Timesheet" action="#{record.createRecord}"></h:commandButton>
+    	</h:form>
+    </h:body>
+</html>
