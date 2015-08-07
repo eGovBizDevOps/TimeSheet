@@ -10,6 +10,16 @@
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
 	 -->
+	 <!-- LOTS TO FIX HERE!!!!!!!!!! -->
+	<navigation-rule>
+		<display-name>login</display-name>
+		<from-view-id>/login.xhtml</from-view-id>
+		<navigation-case>
+			<from-action>#{record.login}</from-action>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/login.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 	<navigation-rule>
 		<display-name>timeSheet</display-name>
 		<from-view-id>/timeForm.xhtml</from-view-id>
