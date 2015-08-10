@@ -10,14 +10,14 @@
         <link rel="stylesheet" type="text/css" href="stuff.css"></link>
     </h:head>
     <h:body>
-    	<h2>Add New Record</h2>
+    	<h2 id="head">Add New Record</h2>
     	<a href="NewUser.xhtml">Create New User</a>
     	<h:form>
-    	   <label>Employee ID:</label><h:inputText value="#{record.eid}"></h:inputText><br></br><br></br>
-    	   <label>Password:</label><h:inputText value="dummy val"></h:inputText><br></br><br></br>
-    	   <label>Date (mm/dd/yyyy):</label><h:inputText value="#{record.date}"></h:inputText><br></br><br></br>
-    	   <label>Time In x:xx[pm/am]:</label><h:inputText value="#{record.timeIn}"></h:inputText><br></br><br></br>
-    	   <label>Time Out x:xx[pm/am]:</label><h:inputText value="#{record.timeOut}"></h:inputText><br></br><br></br>
+    	   <label>Employee ID:</label><input type="text" value="#{record.eid}" name="eid"></input><br></br><br></br>
+    	   <label>Password:</label><input type="password" value="dummy val" name="pass"></input><br></br><br></br>
+    	   <label>Date (mm/dd/yyyy):</label><input type="text" value="#{record.date}" name="date"></input><br></br><br></br>
+    	   <label>Time In x:xx[pm/am]:</label><input type="text" value="#{record.timeIn}" name="timein"></input><br></br><br></br>
+    	   <label>Time Out x:xx[pm/am]:</label><input type="text" value="#{record.timeOut}" name="timeout"></input><br></br><br></br>
     	   <h:commandButton value="Add to Timesheet" action="#{record.createRecord}"></h:commandButton>
     	</h:form>
     </h:body>
