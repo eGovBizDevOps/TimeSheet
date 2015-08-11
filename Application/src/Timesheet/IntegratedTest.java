@@ -22,13 +22,15 @@ public class IntegratedTest {
       System.out.println(name);
       
 
-      driver.findElement(By.name("eid")).sendKeys("1012");
+      driver.findElement(By.xpath(".//*[@id='j_idt6']/input[2]")).sendKeys("@@@@");
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-      driver.findElement(By.name("date")).sendKeys("10/03/2015");
+      driver.findElement(By.xpath(".//*[@id='j_idt6']/input[3]")).sendKeys("@@@@@@@@");
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-      driver.findElement(By.name("timein")).sendKeys("7:15am");
+      driver.findElement(By.xpath(".//*[@id='j_idt6']/input[4]")).sendKeys("10/03/2015");
+      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+      driver.findElement(By.xpath(".//*[@id='j_idt6']/input[5]")).sendKeys("7:15am");
       driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-      driver.findElement(By.name("timeout")).sendKeys("6:00pm");
+      driver.findElement(By.xpath(".//*[@id='j_idt6']/input[6]")).sendKeys("6:00pm");
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
       
       driver.findElement(By.xpath(".//*[@id='j_idt6']/input[7]")).click();
