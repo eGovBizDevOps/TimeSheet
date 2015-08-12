@@ -4,13 +4,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.*;
 
 public class IntegratedTest {
    public static void main(String[] args) throws InterruptedException {
    
       // Instantiate the RC Server
-      WebDriver driver = new FirefoxDriver();
+      WebDriver driver = new RemoteWebDriver(DesiredCapabilities.firefox());
       
 
       driver.manage().window().maximize();
