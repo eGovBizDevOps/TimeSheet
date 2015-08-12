@@ -16,7 +16,7 @@ public class IntegratedTest {
       // Instantiate the RC Server
       WebDriver driver;
 	try {
-		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4444/wd/hub"), DesiredCapabilities.firefox());
+		driver = new RemoteWebDriver(new URL("http://127.0.0.1:4448/wd/hub"), DesiredCapabilities.firefox());
 	      
 
 	      driver.manage().window().maximize();
