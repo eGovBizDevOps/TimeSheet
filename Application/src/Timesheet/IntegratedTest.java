@@ -52,7 +52,7 @@ public class IntegratedTest {
 
 			String content = text;
 
-			File file = new File("C:\\Users\bssintern2\\.jenkins\\workspace\\TestApp\\Application\\WebContent\\results.html");
+			File file = new File("results.html");
 
 			// if file doesnt exists, then create it
 			if (!file.exists()) {
