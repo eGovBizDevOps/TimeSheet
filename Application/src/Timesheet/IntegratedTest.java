@@ -30,7 +30,7 @@ public class IntegratedTest {
       for(int i = 0; i<5; i++){
     	  driver.findElement(By.xpath(".//*[@id='j_idt6']/input[" + (i+2) + "]")).sendKeys(record[i]);
     	  driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-	      text += "<tr class=\"done\">\n\t<td>Display</td>\n\t<td>" + fields[i] + "</td>\n\t<td>" + record[i] + "</td>\n\t<td>PERFORMED</td>\n<tr>\n";
+	      text += "<tr class=\"done\">\n\t<td>Execute</td>\n\t<td>" + fields[i] + "</td>\n\t<td>" + record[i] + "</td>\n\t<td>PERFORMED</td>\n<tr>\n";
       }
       
       driver.findElement(By.xpath(".//*[@id='j_idt6']/input[7]")).click();
